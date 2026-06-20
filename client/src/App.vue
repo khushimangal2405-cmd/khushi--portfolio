@@ -25,7 +25,7 @@ import hero from './assets/hero.png'
     <button>Hire Me</button>
   </a>
 
-  <a href="/RESUME%20KHUSHI%201.pdf" download>
+  <a href="/resume.pdf" download>
     <button>Download Resume</button>
   </a>
 
