@@ -20,11 +20,24 @@ import hero from './assets/hero.png'
   <h1>Creative Web Developer</h1>
   <p>I build modern, responsive and user-friendly websites.</p>
   <p>Passionate CSE Student | Learning Web Development</p>
-  <button>Hire Me</button>
-  <button>Download Resume</button>
- <div class="social-links">
+
+  <a href="#contact">
+    <button>Hire Me</button>
+  </a>
+
+  <a href="/RESUME%20KHUSHI%201.pdf" download>
+    <button>Download Resume</button>
+  </a>
+
+  <div class="social-links">
+
+  <a
+   href="https://github.com/khushimangal2405-cmd" target="_blank">
     <button>GitHub</button>
+  </a>
+<a href="https://www.linkedin.com/in/khushi-mangal-3102ab314" target="_blank">
   <button>LinkedIn</button>
+</a>
 </div>
 </section>
 
@@ -102,14 +115,15 @@ body{
 }
 
 nav{
-  display:flex;
+   display:flex;
   justify-content:space-between;
   align-items:center;
   padding:15px;
-border-bottom:1px solid skyblue;
-position: sticky;
-top: 0;
-background: black;
+  border-bottom:1px solid skyblue;
+  position:sticky;
+  top:0;
+  background:black;
+  z-index:1000;
 }
 
 ul{
@@ -145,7 +159,14 @@ button{
   button:hover{
   transform: scale(1.1);
 }
+a:hover{
+  color:skyblue;
+  transform:scale(1.1);
+}
 
+a:visited{
+  color:white;
+}
 .card{
   border:1px solid skyblue;
   padding:20px;

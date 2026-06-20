@@ -293,4 +293,9 @@ code {
     right: 0;
     border-right-color: var(--border);
   }
+  nav a:hover{
+  color: skyblue;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 }
