@@ -1,5 +1,8 @@
 <script setup>
 import hero from './assets/hero.png'
+import khushi from './assets/khushi.png'
+import project1 from './assets/project1.png'
+import project2 from './assets/project2.png'
 </script>
 <template>
   <div class="container">
@@ -16,8 +19,9 @@ import hero from './assets/hero.png'
     </nav>
 
     <section id="home" class="hero">
-    <img :src="hero" alt="hero image" class="hero-img">
-  <h1>Creative Web Developer</h1>
+    <img :src="khushi" alt="Khushi" class="hero-img">
+  <h1>Hi, I'm Khushi Mangal</h1>
+  <p>Computer Science Engineering Student & Web Developer</p>
   <p>I build modern, responsive and user-friendly websites.</p>
   <p>Passionate CSE Student | Learning Web Development</p>
 
@@ -25,11 +29,11 @@ import hero from './assets/hero.png'
     <button>Hire Me</button>
   </a>
 
-  <a href="/resume.pdf" download>
-    <button>Download Resume</button>
-  </a>
+ <a href="./resume.pdf" target="_blank">
+  <button>Download Resume</button>
+</a>
 
-  <div class="social-links">
+  <div class="social-links"> 
 
   <a
    href="https://github.com/khushimangal2405-cmd" target="_blank">
@@ -44,8 +48,10 @@ import hero from './assets/hero.png'
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I am learning Web Development and building modern websites.
-      </p>
+  Hello! I'm Khushi Mangal, a Computer Science Engineering student.
+  I am passionate about Web Development and enjoy creating modern,
+  responsive and user-friendly websites using HTML, CSS, JavaScript and Vue.js.
+</p>
     </section>
 <section id="skills">
   <h2>My Skills</h2>
@@ -57,31 +63,35 @@ import hero from './assets/hero.png'
     <span>Vue.js</span>
     <span>C Programming</span>
     <span>Git & GitHub</span>
+    <span>Responsive Design</span>
+<span>Bootstrap</span>
+<span>Problem Solving</span>
   </div>
 </section>
     <section id="projects">
       <h2>Projects</h2>
 
       <div class="card">
-      <img :src="hero" class="project-img">
+      <img :src="project1" class="project-img">
         <h3>Student Management System</h3>
 <p>Manage student records efficiently.</p>
 <p>Built with HTML, CSS and JavaScript</p>
-<button>View Project</button>
+<button>Coming Soon</button>
       </div>
 
       <div class="card">
-      <img :src="hero" class="project-img">
+      <img :src="project2" class="project-img">
        <h3>Restaurant Website</h3>
 <p>Modern restaurant landing page.</p>
 <p>Built with Vue.js and CSS</p>
-<button>View Project</button>
+<button>Coming Soon</button>
       </div>
     </section>
 
    <section id="contact">
       <h2>Contact</h2>
 <p>Email: khushimangal@gmail.com</p>
+<p>Phone: +91 9755125174</p>
       <input placeholder="Your Name" />
       <br><br>
 
@@ -189,7 +199,12 @@ h2{
   color:skyblue;
 }
 .hero-img{
-  width:350px;
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  object-fit:cover;
+  border:3px solid skyblue;
+  box-shadow:0 0 20px skyblue;
   margin-bottom:20px;
   animation: float 3s ease-in-out infinite;
 }
@@ -320,10 +335,17 @@ textarea:focus{
 button{
   background:linear-gradient(45deg, #00c6ff, #0072ff);
   color:white;
+  border:none;
+  padding:12px 25px;
+  cursor:pointer;
+  border-radius:8px;
   font-weight:bold;
+  margin:10px;
+  transition:0.3s;
 }
 
 button:hover{
+  transform:scale(1.05);
   box-shadow:0 0 20px skyblue;
 }
 </style>
