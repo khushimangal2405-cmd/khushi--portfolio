@@ -120,11 +120,11 @@ body{
 }
 
 .container{
-  padding:20px;
-   max-width:1000px;
+  width:95%;
+  max-width:1400px;
   margin:auto;
+  padding:20px;
 }
-
 nav{
    display:flex;
   justify-content:space-between;
@@ -212,13 +212,15 @@ h2{
   box-shadow:0 0 20px skyblue;
   margin-bottom:20px;
 }
-
 .hero-text{
   flex:1;
 }
-  animation: float 3s ease-in-out infinite;
 
-  @keyframes float{
+.hero-img{
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float{
   0%{
     transform: translateY(0px);
   }
