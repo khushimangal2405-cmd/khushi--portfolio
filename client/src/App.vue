@@ -20,6 +20,7 @@ import project2 from './assets/project2.png'
 
     <section id="home" class="hero">
     <img :src="khushi" alt="Khushi" class="hero-img">
+    <div class="hero-text">
   <h1>Hi, I'm Khushi Mangal</h1>
   <p>Computer Science Engineering Student & Web Developer</p>
   <p>I build modern, responsive and user-friendly websites.</p>
@@ -34,7 +35,7 @@ import project2 from './assets/project2.png'
 </a>
 
   <div class="social-links"> 
-
+</div>
   <a
    href="https://github.com/khushimangal2405-cmd" target="_blank">
     <button>GitHub</button>
@@ -146,7 +147,11 @@ li:hover{
   cursor:pointer;
 }
 .hero{
-   text-align:center;
+   display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:50px;
+
   margin-top:60px;
   padding:30px;
   border:1px solid skyblue;
@@ -206,8 +211,13 @@ h2{
   border:3px solid skyblue;
   box-shadow:0 0 20px skyblue;
   margin-bottom:20px;
-  animation: float 3s ease-in-out infinite;
 }
+
+.hero-text{
+  flex:1;
+}
+  animation: float 3s ease-in-out infinite;
+
   @keyframes float{
   0%{
     transform: translateY(0px);
@@ -296,7 +306,10 @@ textarea:focus{
   box-shadow:0 0 15px skyblue;
 }
 @media (max-width:768px){
-
+.hero{
+  flex-direction:column;
+  text-align:center;
+}
   nav{
     flex-direction:column;
     gap:15px;
